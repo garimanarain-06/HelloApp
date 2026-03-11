@@ -1,18 +1,23 @@
 /**
- * Program Name : OOPSBannerApp
-<<<<<<< HEAD
- * Description  : Display OOPS in Banner Format
-=======
- * Description  : Prints OOPS to console
->>>>>>> feature/UC1-PrintOOPS
- * Author       : Garima Narain
- * Version      : 1.0
+ * OOPSBannerApp UC4 - Render OOPS using String Array and Loop
  */
 
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
-        System.out.println("OOPS");
+
+        String[] lines = new String[7];
+
+        lines[0] = String.join("  ", " ***** ", " ***** ", "****** ", " ***** ");
+        lines[1] = String.join("  ", "*     *", "*     *", "*     *", "*     *");
+        lines[2] = String.join("  ", "*     *", "*     *", "*     *", "*      ");
+        lines[3] = String.join("  ", "*     *", "*     *", "****** ", " ***** ");
+        lines[4] = String.join("  ", "*     *", "*     *", "*      ", "      *");
+        lines[5] = String.join("  ", "*     *", "*     *", "*      ", "*     *");
+        lines[6] = String.join("  ", " ***** ", " ***** ", "*      ", " ***** ");
+
+        for (String line : lines) {
+            System.out.println(line);
+        }
     }
 }
-
